@@ -1,0 +1,20 @@
+!!! 5
+html(lang="en")
+  block vars
+  head
+    title= pageTitle
+    link(rel="stylesheet" href="/style.css")
+  body
+
+    //- Sidebar
+    div#sidebar
+      div#header
+        h1 ACM Outreach
+      ul#modules
+        each module in modules
+          li.module
+            p= module
+
+    //- Content
+    div#content
+      block test
