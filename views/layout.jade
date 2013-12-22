@@ -13,8 +13,15 @@ html(lang="en")
       ul#modules
         each module in modules
           li.module
-            p= module
+            div
+              p= module.name
+            div.content
+              p= module.content
 
     //- Content
     div#content
       block test
+
+    //- Scripts
+    script(type="application/javascript" src="/jquery-1.10.2.min.js")
+    script(type="application/javascript" src="/script.js")
