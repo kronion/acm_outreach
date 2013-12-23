@@ -13,7 +13,6 @@ the `public/modules` folder. Then add a module object to the module array in
 {
   "name" : "Your Module Name",
   "description" : "A brief summary of the content of your module",
-  "link" : "The name of your file as it appears in the `public/modules` folder.
+  "link" : "The name of your file as it appears in the `public/modules` folder"
 ```
-<br>
 That's it!
