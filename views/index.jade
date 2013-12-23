@@ -1,8 +1,27 @@
-extends layout
+!!! 5
+html(lang="en")
+  head
+    title= "ACM Outreach"
+    link(rel="stylesheet" href="/css/style.css")
+  body
 
-block vars
-  - var pageTitle = "Home"
-  - var modules = [ { "name" : "Module 1", "content" : "An Intro to HTML and CSS" }, { "name" : "Module 2", "content" : "An Intro to Javascript and jQuery" } ]; 
+    //- Sidebar
+    div#sidebar
+      div#header
+        a(onclick="home()")
+          h1 ACM Outreach
+      ul#modules
+        each module in modules
+          li.module
+            a(onclick="loadContent('#{module.link}')")
+              div
+                p= module.name
+              div.content
+                p= module.description
 
-block test
-  p Test
+    //- Content
+    iframe#content(seamless="seamless")
+
+    //- Scripts
+    script(type="application/javascript" src="/js/jquery-1.10.2.min.js")
+    script(type="application/javascript" src="/js/script.js")
