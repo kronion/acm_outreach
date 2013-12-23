@@ -13,5 +13,10 @@
     "name" : "Module 3",
     "description" : "An Intro to Javascript and jQuery",
     "link" : "test3.html"
+  },
+  {
+    "name" : "Module 4",
+    "description" : "An Intro to Javascript and jQuery",
+    "link" : "test4.html"
   }
 ]
