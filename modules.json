@@ -26,5 +26,10 @@
   { "name" : "Module 6", 
     "description" : "Video Test",
     "link" : "test5.html"
+  },
+  { 
+    "name" : "Module 7", 
+    "description" : "Kiran's test2",
+    "link" : "test5_kiran.html"
   }
 ]
